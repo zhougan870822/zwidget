@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName"
+    >
+    <attr name="corners" format="dimension|reference"/>
+    <attr name="circular" format="boolean"/>
+
+
+    <attr name="sure" format="enum">
+        <enum name="SureWidth" value="0"/>
+        <enum name="SureHeight" value="1"/>
+    </attr>
+    <attr name="ratioWidth" format="integer"/>
+    <attr name="ratioHeight" format="integer"/>
+
+    <declare-styleable name="StickyScrollView" >
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SquareImageView">
+        <attr name="sure"/>
+        <attr name="ratioWidth"/>
+        <attr name="ratioHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="SquareLayout">
+        <attr name="sure"/>
+        <attr name="ratioWidth" />
+        <attr name="ratioHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView" >
+        <attr name="corners" />
+        <attr name="circular"/>
+    </declare-styleable>
+    <!--自定义星星组件的属性-->
+    <declare-styleable name="RatingBar">
+        <attr name="frontDrawable" format="reference"/>
+        <attr name="backDrawable" format="reference"/>
+        <attr name="spacing" format="reference|dimension"/>
+        <attr name="numStars" format="integer"/>
+        <attr name="starProgress" format="integer"/>
+        <attr name="stepSize" format="float"/>
+        <attr name="rating" format="float"/>
+        <attr name="changeEnable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

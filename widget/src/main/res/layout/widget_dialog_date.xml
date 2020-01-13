@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/date_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="选择日期"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/gender_ll_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+
+        >
+        
+        <NumberPicker
+            android:id="@+id/date_numberPicker_year"
+            style="@style/widget_dateNumPickerStyle"
+            />
+        <TextView
+            android:id="@+id/date_tv_year"
+            style="@style/widget_dateTextStyle"
+            android:text="年"
+            />
+        <NumberPicker
+            android:id="@+id/date_numberPicker_month"
+            style="@style/widget_dateNumPickerStyle"
+            />
+        <TextView
+            android:id="@+id/date_tv_month"
+            style="@style/widget_dateTextStyle"
+            android:text="月"
+            />
+        <NumberPicker
+            android:id="@+id/date_numberPicker_day"
+            style="@style/widget_dateNumPickerStyle"
+            />
+        <TextView
+            android:id="@+id/date_tv_day"
+            style="@style/widget_dateTextStyle"
+            android:text="日"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/date_cancel"
+            style="@style/widget_dateBtnStyle"
+            android:text="取消"
+            android:background="@drawable/widget_btn_bg_white_gray"
+
+            />
+        <TextView
+            android:id="@+id/date_ok"
+            style="@style/widget_dateBtnStyle"
+            android:text="完成"
+            android:background="@drawable/widget_btn_bg_white_gray"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
